@@ -5,7 +5,7 @@ import '../models/email_stats.dart';
 // Change this if running on a physical device — use your Mac's local IP
 // e.g. http://192.168.1.10:8000
 // Android emulator: http://10.0.2.2:8000
-const String _baseUrl = 'http://127.0.0.1:8000';
+const String _baseUrl = 'https://email-agent-7644.onrender.com';
 
 class ApiException implements Exception {
   final String message;
