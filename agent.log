@@ -1,0 +1,78 @@
+2026-05-15 14:30:35,376 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:38:43,221 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:38:46,000 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:38:52,623 INFO app.services.polling_service — Poll job started
+2026-05-15 14:38:52,624 INFO app.services.polling_service — First poll run — fetching recent emails as baseline
+2026-05-15 14:38:52,625 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:38:52,967 INFO google_auth_httplib2 — Refreshing credentials due to a 401 response. Attempt 1/2.
+2026-05-15 14:38:55,761 INFO app.services.polling_service — Found 5 new email(s) — summarizing
+2026-05-15 14:38:59,645 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:38:59,730 INFO app.services.db_service — Saved new email record id=1 subject='Mobile Application Developer at RDash (YC W22)'
+2026-05-15 14:39:03,844 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:39:05,440 INFO app.services.gmail_service — Applied labels ['AI/High Priority', 'AI/Action Required', 'AI/Security'] to message 19e2a17dbcd7316c
+2026-05-15 14:39:05,440 INFO app.services.polling_service — Labeled 'Security alert for anusshhka.singh3008@gmail.com' with: ['AI/High Priority', 'AI/Action Required', 'AI/Security']
+2026-05-15 14:39:05,446 INFO app.services.db_service — Saved new email record id=2 subject='Security alert for anusshhka.singh3008@gmail.com'
+2026-05-15 14:39:09,601 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:39:09,616 INFO app.services.db_service — Saved new email record id=3 subject='Quick note before I raise the price'
+2026-05-15 14:39:14,099 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:39:14,107 INFO app.services.db_service — Saved new email record id=4 subject='Why are you still at your old job? Look at this 👇'
+2026-05-15 14:39:17,975 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:39:17,982 INFO app.services.db_service — Saved new email record id=5 subject='The Monthly Build - Google Developer Program - May'
+2026-05-15 14:39:17,983 INFO app.services.polling_service — Poll complete — 5 email(s) summarized. Total processed: 5
+2026-05-15 14:46:30,134 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:46:31,323 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:46:44,272 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:46:45,192 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:46:58,626 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:46:59,583 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:47:35,409 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:47:36,620 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:47:40,980 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:47:41,850 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:47:59,771 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:48:00,885 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:48:10,392 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:48:11,390 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:48:28,795 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:48:29,913 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:48:33,653 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:48:34,515 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:51:25,947 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 14:51:26,353 INFO google_auth_httplib2 — Refreshing credentials due to a 401 response. Attempt 1/2.
+2026-05-15 14:51:27,473 INFO app.services.gmail_service — Created Gmail draft id=r-8244268622123574281 for reply to 'Security alert for anusshhka.singh3008@gmail.com'
+2026-05-15 14:53:43,851 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:53:45,091 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:53:50,055 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:53:50,972 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:53:58,654 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:53:59,613 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:54:05,267 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:54:06,260 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:54:09,908 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:54:10,716 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:54:16,087 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:54:16,830 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:54:52,840 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:54:54,708 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:57:01,803 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:57:02,964 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:57:05,800 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:57:06,584 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:57:34,743 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:57:35,838 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 14:57:51,100 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 14:57:52,135 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 15:11:55,624 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 15:11:56,834 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 15:13:31,326 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 15:13:55,528 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 15:14:03,622 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 15:14:04,674 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 15:18:26,168 INFO googleapiclient.discovery_cache — file_cache is only supported with oauth2client<4.0.0
+2026-05-15 15:18:26,489 INFO google_auth_httplib2 — Refreshing credentials due to a 401 response. Attempt 1/2.
+2026-05-15 15:18:27,224 INFO app.services.gmail_service — Created Gmail draft id=r3336009256487856587 for reply to 'The Monthly Build - Google Developer Program - May'
+2026-05-15 15:19:20,112 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 15:19:21,181 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 15:20:04,742 INFO apscheduler.scheduler — Scheduler has been shut down
+2026-05-15 15:20:06,804 INFO apscheduler.scheduler — Scheduler started
+2026-05-15 17:49:05,317 INFO apscheduler.scheduler — Scheduler has been shut down

@@ -1,0 +1,28 @@
+# Web framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1        # ASGI server to run FastAPI
+
+# Google APIs
+google-auth==2.36.0              # Google OAuth core library
+google-auth-oauthlib==1.2.1      # OAuth 2.0 flow helpers
+google-auth-httplib2==0.2.0      # HTTP transport for Google auth
+google-api-python-client==2.154.0  # Gmail API client
+
+# Gemini AI
+google-generativeai==0.8.3       # Gemini LLM client
+
+# Data validation & settings
+pydantic==2.10.3                 # Data models and validation
+pydantic-settings==2.6.1         # Settings management from .env
+
+# Database
+sqlalchemy==2.0.36               # ORM + query builder
+alembic==1.14.0                  # Database migration tool
+psycopg2-binary==2.9.10          # PostgreSQL driver (binary = no compiler needed)
+
+# Scheduling
+apscheduler==3.10.4              # In-process background job scheduler
+
+# Utilities
+python-dotenv==1.0.1             # Load .env files
+httpx==0.28.1                    # Async HTTP client (for future use)

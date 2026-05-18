@@ -1,0 +1,33 @@
+name: gmail_dashboard
+description: "AI Gmail Summarizer Dashboard"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # HTTP client — dart's built-in http package, simple and reliable
+  http: ^1.2.2
+
+  # State management — Provider is the simplest correct approach.
+  # Not Riverpod, not Bloc. Provider teaches the pattern without ceremony.
+  provider: ^6.1.2
+
+  # Charts — fl_chart is the best Flutter charting library
+  fl_chart: ^0.70.2
+
+  # Lightweight key-value persistence for UI preferences (tone per sender, etc.)
+  shared_preferences: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
