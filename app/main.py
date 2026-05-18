@@ -9,13 +9,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 
+_handlers = [logging.StreamHandler()]
+if settings.app_env == "development":
+    _handlers.append(logging.FileHandler("agent.log"))
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(name)s — %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler("agent.log"),
-    ],
+    handlers=_handlers,
 )
 
 
