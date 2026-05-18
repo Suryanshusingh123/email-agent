@@ -57,9 +57,14 @@ class ApiService {
   Future<Map<String, dynamic>> generateDraft(
     String gmailMessageId, {
     String tone = 'professional',
+    String? instructions,
   }) async {
+    final params = <String, String>{'tone': tone};
+    if (instructions != null && instructions.trim().isNotEmpty) {
+      params['instructions'] = instructions.trim();
+    }
     final uri = Uri.parse('$_baseUrl/emails/$gmailMessageId/draft')
-        .replace(queryParameters: {'tone': tone});
+        .replace(queryParameters: params);
     final response = await _client.post(uri).timeout(const Duration(seconds: 30));
     _assertOk(response);
     return jsonDecode(response.body) as Map<String, dynamic>;

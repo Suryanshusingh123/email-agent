@@ -119,6 +119,7 @@ async def get_raw_emails(
 def generate_draft(
     gmail_message_id: str,
     tone: str = Query(default="professional", description=f"Reply tone: {', '.join(VALID_TONES)}"),
+    instructions: Optional[str] = Query(default=None, description="Optional freeform instructions for the AI (e.g. 'mention I'll be out next week')"),
     db: Session = Depends(get_db),
 ):
     """
@@ -162,6 +163,7 @@ def generate_draft(
             key_points=key_points,
             action_description=record.action_description,
             tone=safe_tone,
+            user_instructions=instructions,
         )
     except RuntimeError as e:
         raise HTTPException(status_code=502, detail=f"Draft generation failed: {str(e)}")

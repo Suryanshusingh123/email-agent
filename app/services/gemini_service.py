@@ -295,6 +295,7 @@ def generate_reply_draft(
     key_points: list,
     action_description: Optional[str],
     tone: str = "professional",
+    user_instructions: Optional[str] = None,
 ) -> str:
     """
     Generate a professional reply draft using Gemini.
@@ -332,6 +333,7 @@ def generate_reply_draft(
     action_line = f"\nThe required action is: {action_description}" if action_description else ""
     key_points_text = "\n".join(f"- {p}" for p in key_points) if key_points else "None provided"
     tone_instruction = _TONE_INSTRUCTIONS.get(tone, _TONE_INSTRUCTIONS["professional"])
+    instructions_line = f"\nAdditional instructions from the user (follow these closely): {user_instructions}" if user_instructions and user_instructions.strip() else ""
 
     prompt = f"""Draft a reply to the following email.
 
@@ -340,7 +342,7 @@ Subject: {subject}
 From: {sender}
 Summary: {summary}
 Key points:
-{key_points_text}{action_line}
+{key_points_text}{action_line}{instructions_line}
 
 Instructions:
 - {tone_instruction}
